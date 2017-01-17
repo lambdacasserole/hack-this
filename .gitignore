@@ -49,3 +49,4 @@ fabric.properties
 
 # Compiled code
 /web/css
+/web/js
