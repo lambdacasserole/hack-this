@@ -1,0 +1,31 @@
+{
+  "name": "hack-this",
+  "description": "A collection of common web programming security mistakes.",
+  "main": "index.js",
+  "authors": [
+    "Saul Johnson <saul.johnson@tees.ac.uk>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "programming",
+    "mistakes",
+    "security",
+    "hack"
+  ],
+  "homepage": "https://github.com/lambdacasserole/hack-this",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./web/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

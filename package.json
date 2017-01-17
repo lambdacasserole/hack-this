@@ -1,0 +1,30 @@
+{
+  "name": "hack-this",
+  "version": "1.0.0",
+  "description": "A collection of common web programming security mistakes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambdacasserole/hack-this.git"
+  },
+  "keywords": [
+    "web",
+    "programming",
+    "mistakes",
+    "security",
+    "hack"
+  ],
+  "author": "Saul Johnson <saul.johnson@tees.ac.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambdacasserole/hack-this/issues"
+  },
+  "homepage": "https://github.com/lambdacasserole/hack-this#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1"
+  }
+}
