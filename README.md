@@ -31,5 +31,12 @@ In an SQL injection attack, malicious SQL statements are inserted into an entry 
 * Dump several things at once (oh boy): 
     - `http://localhost/index.php?username='%20UNION%20SELECT%201,2,3,4,5,'hello%20world`
 
+### Bypass Login
+It's possible to bypass login completely (logging in as whoever you like) by adding an always-true condition to the password check:
+
+```
+foo' or '1'='1
+```
+
 ## Acknowledgements
 This is heavily based on the [php-sploits](https://github.com/jadz/php-sploits) repository by [Jared Mooring](https://github.com/jadz) and [Allan Shone](https://github.com/CerealBoy). Find the slides for their [SydPHP](https://github.com/sydphp) talk [here](http://www.slideshare.net/CerealBoy/sydphp-security).
