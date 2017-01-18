@@ -6,7 +6,6 @@ require_once 'init.php';
 protectPage();
 
 $success = false;
-$failure = false;
 
 // If this was a POST request, process update.
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,9 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $updated = insertQuery($updateSql, true);
 
         // Record success or failure.
-        if ($updated === false) {
-            $failure = true;
-        } else {
+        if ($updated === true) {
             $success = true;
         }
     }
