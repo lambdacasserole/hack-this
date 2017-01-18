@@ -52,9 +52,10 @@ protectPage();
                     £134,564,234
                 </p>
                 <p>
-                    Now download our entire customer database!
+                    Now edit your profile or download our entire customer database!
                 </p>
                 <p class="text-center">
+                    <a class="btn btn-lg btn-primary" href="/editprofile.php"><i class="fa fa-info-circle"></i> Edit Profile</a>
                     <a class="btn btn-lg btn-danger" href="javascript:alert('Pwned!');"><i class="fa fa-download"></i> Download Database</a>
                 </p>
             </div>
