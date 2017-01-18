@@ -1,6 +1,6 @@
 <?php
 
-require_once 'consts.php';
+require_once 'db_configuration.php';
 
 /**
  * Holds the connection used to interact with the database.
