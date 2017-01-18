@@ -107,22 +107,20 @@ if ($query !== null) {
 <?php
 
 // If we got results, print user details.
-if ($query !== null) {
-    if (!$results) {
+if (!$results || !$query) {
+    echo '<tr>';
+    echo '<td colspan="6" class="text-center text-muted"><div style="margin:25px;">No results.</div></td>';
+    echo '</tr>';
+} else {
+    foreach ($results as $row) {
         echo '<tr>';
-        echo '<td colspan="6" class="text-center text-muted"><div style="margin:25px;">No results found.</div></td>';
+        echo '<td>' . $row[0] . '</td>';
+        echo '<td>' . $row[1] . '</td>';
+        echo '<td>' . $row[2] . '</td>';
+        echo '<td>' . $row[3] . '</td>';
+        echo '<td>' . $row[4] . '</td>';
+        echo '<td>' . $row[5] . '</td>';
         echo '</tr>';
-    } else {
-        foreach ($results as $row) {
-            echo '<tr>';
-            echo '<td>' . $row[0] . '</td>';
-            echo '<td>' . $row[1] . '</td>';
-            echo '<td>' . $row[2] . '</td>';
-            echo '<td>' . $row[3] . '</td>';
-            echo '<td>' . $row[4] . '</td>';
-            echo '<td>' . $row[5] . '</td>';
-            echo '</tr>';
-        }
     }
 }
 
