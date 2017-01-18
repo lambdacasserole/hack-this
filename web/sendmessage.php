@@ -58,10 +58,10 @@ $select .= "</select>";
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Restricted!</h2>
+                <h2>Contact Us!</h2>
                 <p>
-                    We take the security of our customer information <b>extremely</b> seriously. To access our customer
-                    database, please log in below.
+                    Contact a member of staff here by filling out the form below and clicking the send message button!
+                    We'll get back to you as soon as we can!
                 </p>
                 <?php
                     if ($success) {
