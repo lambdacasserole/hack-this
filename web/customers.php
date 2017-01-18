@@ -21,7 +21,8 @@ else if ($getId !== null) {
 
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Clueless Inc. | Customer Database</title>
     <!-- Responsive -->
