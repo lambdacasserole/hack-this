@@ -32,7 +32,7 @@ In an SQL injection attack, malicious SQL statements are inserted into an entry 
 * Dump several things at once (oh boy): 
     - `http://localhost/index.php?username='%20UNION%20SELECT%201,2,3,4,5,'hello%20world`
 
-### Bypass Login
+### Bypass Login (SQL Injection)
 It's possible to bypass login completely (logging in as whoever you like) by adding an always-true condition to the password check:
 
 ```
