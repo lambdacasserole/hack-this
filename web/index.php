@@ -280,7 +280,7 @@
                                 forum website, for example, doesn't check user posts for &lt;script&gt; tags, any user
                                 viewing that post could potentially have malicious code executed on their machine.
                             </p>
-                            <a href="#" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
+                            <a href="/template.php?load=welcome.html" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
                             <button type="button" class="btn btn-lg btn-outline" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
