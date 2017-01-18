@@ -252,7 +252,7 @@
                                 vulnerabilities out there. As well as stealing data, you can gain privileged access
                                 to an application as any user you like.
                             </p>
-                            <a href="#" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
+                            <a href="/login.php" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
                             <button type="button" class="btn btn-lg btn-outline" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
