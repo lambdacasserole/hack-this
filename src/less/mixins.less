@@ -1,4 +1,5 @@
-.button-variant(@color; @background; @border) {
+.button-variant(@color; @background; @border)
+{
 	color: @color;
 	background-color: @background;
 	border-color: @border;
@@ -7,36 +8,44 @@
 	&:focus,
 	&:active,
 	&.active,
-	.open .dropdown-toggle& {
+	.open .dropdown-toggle&
+	{
 		color: @color;
 		background-color: darken(@background, 10%);
         border-color: darken(@border, 12%);
 	}
+
 	&:active,
 	&.active,
-	.open .dropdown-toggle& {
+	.open .dropdown-toggle&
+	{
 		background-image: none;
 	}
+
 	&.disabled,
 	&[disabled],
-	fieldset[disabled] & {
+	fieldset[disabled] &
+	{
 		&,
 		&:hover,
 		&:focus,
 		&:active,
-		&.active {
+		&.active
+		{
 			background-color: @background;
 			border-color: @border;
 		}
 	}
 
-	.badge {
+	.badge
+	{
 		color: @background;
 		background-color: @color;
 	}
 }
 
-.transition-all() {
+.transition-all()
+{
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
