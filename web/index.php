@@ -224,7 +224,7 @@
                                 The harm that SQL injection can do cannot be overstated. It is potentially possible to
                                 steal any file from disk, or delete/steal/modify entire databases at a time.
                             </p>
-                            <a href="#" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
+                            <a href="/customers.php" class="btn btn-lg btn-outline"><i class="fa fa-user-secret"></i> Exploit</a>
                             <button type="button" class="btn btn-lg btn-outline" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
