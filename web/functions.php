@@ -68,3 +68,12 @@ function protectPage() {
         redirectToLogin();
     }
 }
+
+/**
+ * Returns true if the request is a post request, otherwise returns false.
+ *
+ * @return bool
+ */
+function isPostRequest() {
+    return $_SERVER['REQUEST_METHOD'] == 'POST';
+}

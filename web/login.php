@@ -14,7 +14,7 @@ $failed = false;
 $sql = '';
 
 // If this is a POST request, login was attempted.
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isPostRequest()) {
 
     // Run SQL to check if user is in database.
     $sql = "select * from users where username = '" . $_REQUEST['username'] . "' and password = '"

@@ -5,7 +5,7 @@ require_once 'init.php';
 $success = false;
 
 // If this was a POST request, send message.
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isPostRequest()) {
 
     // If no fields are empty.
     if (!empty($_REQUEST['user']) && !empty($_REQUEST['subject']) && !empty($_REQUEST['message'])) {

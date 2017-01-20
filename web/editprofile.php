@@ -8,7 +8,7 @@ protectPage();
 $success = false;
 
 // If this was a POST request, process update.
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isPostRequest()) {
 
     // If no fields are empty.
     if (!empty($_REQUEST['firstname']) && !empty($_REQUEST['surname']) && !empty($_REQUEST['email'])) {
