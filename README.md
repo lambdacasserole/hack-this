@@ -7,11 +7,39 @@ This website, when set up and configured, contains a number of vulnerabilities t
 * XSS (Cross-Site Scripting)
 * Session Hijacking
 
+## Prerequisites
+You'll need to have a web server installed and configured with PHP for this to work. I really recommend [XAMPP](https://www.apachefriends.org/), especially for Windows users. Once you've done that you can proceed.
+
+You'll also need [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed and working.
+
+## Building
+Clone the project down and open the folder in your favourite editor. It's a JetBrains PhpStorm project but you can use whichever paid/free software takes your fancy.
+
+First, install the npm packages necessary to build and run the website. Run the following in your terminal in the project root directory:
+
+```
+npm install
+```
+
+This will install [Bower](https://bower.io/) which will allow you to install the assets the website requires (Bootstrap, jQuery etc.) using the command:
+
+```
+bower install
+```
+
+Gulp will also have been installed. This will compile the [Less](http://lesscss.org/) and [CoffeeScript](http://coffeescript.org/) into CSS and JS ready for production. Do this using the command:
+
+```
+gulp
+```
+
+This command will need running again every time you make a change to a Less file. If you're working on them, run `gulp watch` in a terminal to watch for file changes and compile accordingly.
+
 ## Setup
 To set everything up, you'll need to: 
 
 * Import the file `db.sql` into your database
-* Modify the file `consts.php` to correspond to your database
+* Modify the file `db_configuration.php` to correspond to your database
 * Access the site and get hacking
 
 ## Examples
