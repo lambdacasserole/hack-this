@@ -11,11 +11,11 @@ $results = null;
 
 // Get user by username or ID.
 if ($getUser !== null) {
-	$query   = "select * from users where username = '$getUser'"; // Vulnerable to SQL injection!
+	$query = "select * from users where username = '$getUser'"; // Vulnerable to SQL injection!
 	$results = getSelect($query);
 }
 else if ($getId !== null) {
-	$query   = "select * from users where id = $getId"; // Vulnerable to SQL injection!
+	$query = "select * from users where id = $getId"; // Vulnerable to SQL injection!
     $results = getSelect($query);
 }
 
