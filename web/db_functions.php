@@ -99,6 +99,6 @@ function insertQuery($query, $update = false)
         }
 
         // Success.
-        return ($update === false) ? true : mysqli_insert_id($connection);
+        return $update ? true : mysqli_insert_id($connection);
     }
 }
