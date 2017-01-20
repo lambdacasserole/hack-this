@@ -41,3 +41,5 @@ foo' or '1'='1
 
 ## Acknowledgements
 This is heavily based on the [php-sploits](https://github.com/jadz/php-sploits) repository by [Jared Mooring](https://github.com/jadz) and [Allan Shone](https://github.com/CerealBoy). Find the slides for their [SydPHP](https://github.com/sydphp) talk [here](http://www.slideshare.net/CerealBoy/sydphp-security).
+
+The homepage template is a highly modified version of the [Blackrock Digital Freelancer](https://github.com/BlackrockDigital/startbootstrap-freelancer) template. Wonderful, free, MIT licensed template. Check it out if you're in the market for such a thing.
