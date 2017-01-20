@@ -1,6 +1,8 @@
 # Hack This
 A collection of common web programming mistakes.
 
+![Screenshot](screenshot_small.png)
+
 This website, when set up and configured, contains a number of vulnerabilities that can be exploited, including:
 
 * SQL Injection
