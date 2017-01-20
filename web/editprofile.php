@@ -11,14 +11,14 @@ $success = false;
 if (isPostRequest()) {
 
     // If no fields are empty.
-    if (!empty($_REQUEST['firstname']) && !empty($_REQUEST['surname']) && !empty($_REQUEST['email'])) {
+    if (noneAreEmpty('firstname', 'surname', 'email')) {
 
         $updateSql = "update users set firstname = '" . $_REQUEST['firstname'] . "', surname = '" . $_REQUEST['surname']
             . "', email='" . $_REQUEST['email'] . "' where id = " . $_SESSION['userid']; // Vulnerable to SQL injection!
         $updated = insertQuery($updateSql, true);
 
         // Record success or failure.
-        if ($updated === true) {
+        if ($updated == true) {
             $success = true;
         }
     }
