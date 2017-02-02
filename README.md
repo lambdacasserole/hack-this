@@ -68,6 +68,9 @@ It's possible to bypass login completely (logging in as whoever you like) by add
 foo' or '1'='1
 ```
 
+## Warnings
+This site is intentionally left vulnerable to common exploits. Don't host it on the same server as any production sites, never deploy it on any machine that you don't mind bricking (I recommend a disposable VM.)
+
 ## Acknowledgements
 This is heavily based on the [php-sploits](https://github.com/jadz/php-sploits) repository by [Jared Mooring](https://github.com/jadz) and [Allan Shone](https://github.com/CerealBoy). Find the slides for their [SydPHP](https://github.com/sydphp) talk [here](http://www.slideshare.net/CerealBoy/sydphp-security).
 
