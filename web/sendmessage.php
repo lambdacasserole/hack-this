@@ -8,7 +8,7 @@ $success = false;
 if (isPostRequest()) {
 
     // If no fields are empty.
-    if (noneAreEmpty('user', 'subject', 'message')) {
+    if (noneAreEmpty(['user', 'subject', 'message'])) {
 
         $messageSql = "insert into messages(user_id, subject, message) values('" . $_REQUEST['user'] . "','" .
             $_REQUEST['subject'] . "','" . $_REQUEST['message'] . "')"; // Vulnerable to SQL injection!
