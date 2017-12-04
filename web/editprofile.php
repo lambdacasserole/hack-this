@@ -11,7 +11,7 @@ $success = false;
 if (isPostRequest()) {
 
     // If no fields are empty.
-    if (noneAreEmpty('firstname', 'surname', 'email')) {
+    if (noneAreEmpty(['firstname', 'surname', 'email'])) {
 
         $updateSql = "update users set firstname = '" . $_REQUEST['firstname'] . "', surname = '" . $_REQUEST['surname']
             . "', email='" . $_REQUEST['email'] . "' where id = " . $_SESSION['userid']; // Vulnerable to SQL injection!
