@@ -81,10 +81,10 @@ function isPostRequest() {
 /**
  * Returns true if all given fields are set in the request, otherwise returns false.
  *
- * @param string[] ...$fields   the array of field key names to check
+ * @param string[] $fields  the array of field key names to check
  * @return bool
  */
-function noneAreEmpty(...$fields) {
+function noneAreEmpty($fields) {
     foreach ($fields as $field) {
         if (empty($_REQUEST[$field])) {
             return false; // One field is empty, return false.
