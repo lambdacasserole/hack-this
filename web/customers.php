@@ -100,7 +100,7 @@ if ($query !== null) {
                     <tr>
                         <th>ID</th>
                         <th>Username</th>
-                        <th>Password</th>
+                        <!--<th>Password</th>-->
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
@@ -117,7 +117,7 @@ if (!$results || !$query) {
         echo '<tr>';
         echo '<td>' . $row[0] . '</td>';
         echo '<td>' . $row[1] . '</td>';
-        echo '<td>' . $row[2] . '</td>';
+        // echo '<td>' . $row[2] . '</td>';
         echo '<td>' . $row[3] . '</td>';
         echo '<td>' . $row[4] . '</td>';
         echo '<td>' . $row[5] . '</td>';
